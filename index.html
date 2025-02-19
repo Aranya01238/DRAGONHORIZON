@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Data Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Real-time Sensor Data Visualization</h1>
+        
+        <div class="dashboard">
+            <div class="chart-container">
+                <h2>Thermal Sensor - Human Count</h2>
+                <canvas id="humanCountChart"></canvas>
+                <div class="current-value">
+                    Current Count: <span id="currentHumanCount">0</span>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h2>Upthrust Measurements</h2>
+                <canvas id="upthrustChart"></canvas>
+                <div class="current-value">
+                    Current Upthrust: <span id="currentUpthrust">0</span> N
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h2>Temperature Variations</h2>
+                <canvas id="temperatureChart"></canvas>
+                <div class="current-value">
+                    Current Temperature: <span id="currentTemp">0</span>°C
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gallery-container">
+        <h2>Image Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="/Screenshot 2025-02-17 133418.png" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/image.png" alt="Gallery Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="Screenshot 2025-02-17 134413.png" alt="Gallery Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="/Screenshot 2025-02-17 134525.png" alt="Gallery Image 4">
+            </div>
+        </div>
+    
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <span class="close-btn">&times;</span>
+            <img src="" alt="Lightbox Image" class="lightbox-img">
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
